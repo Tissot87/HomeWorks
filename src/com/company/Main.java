@@ -22,7 +22,7 @@ public class Main {
 
         float f1 = 27.12f;
         long l1 = 987678965549L;
-        short s1 = 2786;
+        float f2 = 2.786f;
         short s2 = 569;
         short s3 = -159;
         short s4 = 27897;
@@ -41,9 +41,12 @@ public class Main {
 
     // Task 4
 
-        byte productivityPerMinute = 8;
-        int productivityPer20Minute = 20 * 8;
-        int productivityPerDay = 144 * 8;
+        byte productivityIn2Minutes = 16;
+        int productivityIn1Minute = productivityIn2Minutes / 2;
+        int productivityPer20Minute = 20 * productivityIn1Minute;
+        int minutesInHour = 60;
+        int hoursIn1Day = 24;
+        int productivityPerDay = hoursIn1Day * minutesInHour * productivityIn1Minute;
         int productivityFor3Days = productivityPerDay * 3;
         int productivityForMonth = productivityPerDay * 30;
 
